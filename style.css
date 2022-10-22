@@ -138,7 +138,20 @@ button {
     border-radius: 7px;
     background-color: var(--blue);
     font-weight: bold;
-    transition-duration: .8s;
+    transition-duration: .4s;
+}
+
+button:hover {
+    background-color: var(--lightGreen);
+}
+
+button:disabled:hover {
+    background-color: var(--red);
+    transform: scale(1);
+}
+
+button:active {
+    transform: scale(0.9);
 }
 
 button:disabled {
