@@ -5,9 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Sign up</title>
 </head>
 <body>
+    <div class="img-container">
+        <img src="image.jpg">
+        <div class="logo-container">
+            <div class="logo">
+                Dimitris Fousekis
+            </div>
+        </div>
+        <div class="credit">
+            Photo by <a href="https://unsplash.com/@maximalfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maximalfocus</a> on <a href="https://unsplash.com/s/photos/tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </div>
+    <div class="container">
+        <form method="post">
+            <fieldset>
+    
+                <div class="input-container">
+                    <header>
+                        Enter your info below
+                    </header>
+        
+                    <div class="name">
+                        <div class="firstname">
+                            <label for="firstname">FIRST NAME</label>
+                            <br>
+                            <input name="firstname" id="firstname" required>
+                        </div>
+            
+                        <div class="lastname">
+                            <label for="lastname">LAST NAME</label>
+                            <br>
+                            <input name="lastname" id="lastname" required>
+                        </div>
+                    </div>
+                    
+                    <div class="contactInfo">
+                        <div class="mail">
+                            <label for="mail">EMAIL</label>
+                            <br>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        
+                        <div class="phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <br>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+        
+        
+                    <div class="passwords">
+                        <div class="password1">
+                            <label for="password1">PASSWORD</label>
+                            <br>
+                            <input type="password" name="password1" id="password1" required>
+                            <br>
+                            <div class="error">Passwords do not match</div>
+                        </div>
+                        <div class="password2">
+                            <label for="password2">CONFIRM PASSWORD</label>
+                            <br>
+                            <input type="password" name="password2" id="password2" required>
+                        </div>
+                    </div>
+                </div>
+    
+            </fieldset>
+            <div class="btn">
+                <button id="submit" disabled>Create Account</button>
+                <br>
+                Already have an account? <a href="sign-in.html">Log in</a>
+            </div>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
     
 </body>
 </html>
